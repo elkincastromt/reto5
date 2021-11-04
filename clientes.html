@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto5 - Clientes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/funcionesClientes.js"></script>
+    <script>traerInformacionClientes()</script>
+</head>
+<body>
+    <center>
+        <table>
+            <tr>
+                <th><a href="especialidades.html">Especialidades</a></th>
+                <th><a href="doctores.html">Doctores</a></th>
+                <th><a href="mensajes.html">Mensajes</a></th>
+                <th><a href="reservaciones.html">Reservaciones</a></th>
+                <th><a href="informe.html">Informe</a></th>
+            </tr>
+        </table>
+        <h1>Clientes</h1>
+        <input type="number" id="id" placeholder="Ingrese un ID">
+        <button onclick="buscarPorIDClientes($('#id'))">Consultar ID</button><br><br>
+        <button onclick="traerInformacionClientes()">Mostrar Todos</button>
+        <a href="crudClientes.html"><button>Añadir Cliente</button></a><br><br>
+        <div id="resultado"></div><br>
+    </center>
+</body>
+</html>

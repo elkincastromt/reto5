@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto5 - Agregar Mensaje</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/funcionesMensajes.js"></script>
+    <script>cargarDatosSelectDoctor()</script>
+    <script>cargarDatosSelectCliente()</script>
+</head>
+<body>
+    <center>
+        <table>
+            <tr>
+                <th><a href="mensajes.html">Mensajes</a></th>
+            </tr>
+        </table>
+        <h1>Agregar Mensaje</h1>
+        <fieldset style="width: 40%">
+            <legend>Datos del Mensaje</legend>
+            <br><table>
+                <tr>
+                    <th>Mensaje:</th>
+                    <td><input type="text" id="messageText"> </td>
+                </tr> 
+                <tr>
+                    <th>Doctor:</th>
+                    <td>
+                        <select id="doctor">
+                        </select>
+                    </td>
+                </tr> 
+                <tr>
+                    <th>Cliente:</th>
+                    <td>
+                        <select id="client">
+                        </select>
+                    </td>
+                </tr> 
+                <tr>
+                    <td colspan="2">
+                        <br><input type="button" value="Agregar" onclick="guardarMensaje()"><br><br>
+                    </td>
+                </tr> 
+            </table>
+        </fieldset>
+    </center>
+</body>
+</html>

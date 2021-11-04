@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto5 - Actualizar Especialidad</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/funcionesEspecialidades.js"></script>
+    <script>
+        const valores = window.location.search;
+        const urlParams = new URLSearchParams(valores);
+        var variable = urlParams.get('variable');
+        cargarDatosEspecialidad(variable);
+    </script>
+</head>
+<body>
+    <center>
+        <table>
+            <tr>
+                <th><a href="especialidades.html">Especialidades</a></th>
+            </tr>
+        </table>
+        <h1>Actualizar Especialidad</h1>
+        <fieldset style="width: 40%">
+            <legend>Datos del Especialidad</legend>
+            <br><table>
+                <tr>
+                    <td><input type="hidden" id="id" readonly> </td>
+                </tr>
+                <tr>
+                    <th>Nombre:</th>
+                    <td><input type="text" id="name"> </td>
+                </tr> 
+                <tr>
+                    <th>Descripción:</th>
+                    <td><input type="text" id="description"> </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <br><input type="button" value="Actualizar" onclick="editarEspecialidad()"><br><br>
+                    </td>
+                </tr> 
+            </table>
+        </fieldset>
+    </center>
+</body>
+</html>

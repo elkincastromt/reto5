@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto5 - Actualizar Reservacion</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/funcionesReservaciones.js"></script>
+    <script>
+        const valores = window.location.search;
+        const urlParams = new URLSearchParams(valores);
+        var variable = urlParams.get('variable');
+        cargarDatosReservacion(variable);
+    </script>
+</head>
+<body>
+    <center>
+        <table>
+            <tr>
+                <th><a href="Reservaciones.html">Reservaciones</a></th>
+            </tr>
+        </table>
+        <h1>Actualizar Reservacion</h1>
+        <fieldset style="width: 40%">
+            <legend>Datos de la Reservacion</legend>
+            <br><table>
+                <tr>
+                    <td><input type="hidden" id="idReservation" readonly> </td>
+                </tr> 
+                <tr>
+                    <th>Fecha Reserva:</th>
+                    <td><input type="date" id="devolutionDate"> </td>
+                </tr> 
+                <tr>
+                    <td colspan="2">
+                        <br><input type="button" value="Actualizar" onclick="editarReservacion()"><br><br>
+                    </td>
+                </tr> 
+            </table>
+        </fieldset>
+    </center>
+</body>
+</html>

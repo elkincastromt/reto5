@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto5 - Agregar Doctor</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/funcionesDoctores.js"></script>
+    <script>cargarDatosSelect()</script>
+</head>
+<body>
+    <center>
+        <table>
+            <tr>
+                <th><a href="doctores.html">Doctores</a></th>
+            </tr>
+        </table>
+        <h1>Agregar Doctor</h1>
+        <fieldset style="width: 42%">
+            <legend>Datos del Doctor</legend>
+            <br><table>
+                <tr>
+                    <th>Nombre:</th>
+                    <td><input type="text" id="name"> </td>
+                </tr>
+                <tr>
+                    <th>Departamento:</th>
+                    <td><input type="text" id="department"> </td>
+                </tr>
+                <tr>
+                    <th>Año de Graduacion:</th>
+                    <td><input type="number" id="year"> </td>
+                </tr> 
+                <tr>
+                    <th>Descripción:</th>
+                    <td><input type="text" id="description"> </td>
+                </tr> 
+                <tr>
+                    <th>Especialidad:</th>
+                    <td>
+                        <select id="specialty">
+                        </select>
+                    </td>
+                </tr> 
+                <tr>
+                    <td colspan="2">
+                        <br><input type="button" value="Agregar" onclick="guardarDoctor()"><br><br>
+                    </td>
+                </tr> 
+            </table>
+        </fieldset>
+    </center>
+</body>
+</html>

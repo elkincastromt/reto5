@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto5 - Agregar Especialidad</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/funcionesEspecialidades.js"></script>
+</head>
+<body>
+    <center>
+        <table>
+            <tr>
+                <th><a href="especialidades.html">Especialidades</a></th>
+            </tr>
+        </table>
+        <h1>Agregar Especialidad</h1>
+        <fieldset style="width: 42%">
+            <legend>Datos de Especialidad</legend>
+            <br><table>
+                <tr>
+                    <th>Nombre:</th>
+                    <td><input type="text" id="name"> </td>
+                </tr> 
+                <tr>
+                    <th>Descripción:</th>
+                    <td><input type="text" id="description"> </td>
+                </tr> 
+                <tr>
+                    <td colspan="2">
+                        <br><input type="button" value="Agregar" onclick="guardarEspecialidad()"><br><br>
+                    </td>
+                </tr> 
+            </table>
+        </fieldset>
+    </center>
+</body>
+</html>

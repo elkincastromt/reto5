@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto5 - Actualizar Mensaje</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/funcionesMensajes.js"></script>
+    <script>
+        const valores = window.location.search;
+        const urlParams = new URLSearchParams(valores);
+        var variable = urlParams.get('variable');
+        cargarDatosMensaje(variable);
+    </script>
+</head>
+<body>
+    <center>
+        <table>
+            <tr>
+                <th><a href="mensajes.html">Mensajes</a></th>
+            </tr>
+        </table>
+        <h1>Actualizar Mensaje</h1>
+        <fieldset style="width: 40%">
+            <legend>Datos del Mensaje</legend>
+            <br><table>
+                <tr>
+                    <td><input type="hidden" id="idMessage" readonly> </td>
+                </tr> 
+                <tr>
+                    <th>Mensaje:</th>
+                    <td><input type="text" id="messageText"> </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <br><input type="button" value="Actualizar" onclick="editarMensaje()"><br><br>
+                    </td>
+                </tr> 
+            </table>
+        </fieldset>
+    </center>
+</body>
+</html>

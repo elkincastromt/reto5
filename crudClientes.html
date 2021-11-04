@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto5 - Agregar Cliente</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/funcionesClientes.js"></script>
+</head>
+<body>
+    <center>
+        <table>
+            <tr>
+                <th><a href="clientes.html">Clientes</a></th>
+            </tr>
+        </table>
+        <h1>Agregar Cliente</h1>
+        <fieldset style="width: 40%">
+            <legend>Datos del Cliente</legend>
+            <br><table>
+                <tr>
+                    <th>Nombre:</th>
+                    <td><input type="text" id="name"> </td>
+                </tr> 
+                <tr>
+                    <th>Email:</th>
+                    <td><input type="text" id="email"> </td>
+                </tr>
+                <tr>
+                    <th>Password:</th>
+                    <td><input type="password" id="password"> </td>
+                </tr> 
+                <tr>
+                    <th>Edad:</th>
+                    <td><input type="number" id="age"> </td>
+                </tr> 
+                <tr>
+                    <td colspan="2">
+                        <br><input type="button" value="Agregar" onclick="guardarCliente()"><br><br>
+                    </td>
+                </tr> 
+            </table>
+        </fieldset>
+    </center>
+</body>
+</html>
